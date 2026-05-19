@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F1F5F9;
+  --color-border: #E2E8F0;
+  --color-text-primary: #0F172A;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748B;
+  --color-brand-navy: #0B1220;
+  --color-brand-blue: #2563EB;
+  --color-brand-cyan: #06B6D4;
+  --color-brand-violet: #7C3AED;
+  --color-severity-success: #16A34A;
+  --color-severity-warning: #F59E0B;
+  --color-severity-high: #EA580C;
+  --color-severity-critical: #DC2626;
+  --radius-card: 24px;
+  --radius-button: 12px;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer utilities {
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.5);
+  }
+
+  .hero-gradient {
+    background: radial-gradient(circle at top right, rgba(37,99,235,0.16), transparent 34%),
+                radial-gradient(circle at bottom left, rgba(6,182,212,0.12), transparent 28%),
+                #F8FAFC;
+  }
+
+  .hero-grid {
+    min-height: calc(100vh - 72px);
+    align-items: center;
+  }
+}

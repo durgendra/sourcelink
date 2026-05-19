@@ -1,0 +1,8 @@
+{
+  "name": "SourceLink",
+  "description": "Dependency management for digital content, partner claims, and brand assets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
